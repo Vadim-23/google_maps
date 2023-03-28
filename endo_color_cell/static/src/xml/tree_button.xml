@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+  <t t-inherit="web.PivotView.Buttons" t-inherit-mode="extension" owl="1">
+    <xpath expr="//div[hasclass('btn-group')]" position="inside">
+       <button class="btn btn-secondary fa fa-exchange" t-on-click="add_color"
+               aria-label="wdwdwad axis"/>
+    </xpath>
+  </t>
+</templates>
+        <!--<?xml version="1.0" encoding="UTF-8" ?>-->
+        <!--<templates xml:space="preserve">-->
+        <!--    <t t-inherit="web.PivotView.Buttons" t-inherit-mode="extension" owl="1">-->
+        <!--&lt;!&ndash;         <t t-jquery="button:last" t-operation="after">&ndash;&gt;-->
+        <!--        &lt;!&ndash;             <button class="btn btn-secondary fa fa-exchange add_color" t-on-click="add_color" data-tooltip="Flip axis" aria-label="Flip axis" t-attf-disabled="{{noDataDisplayed ? 'disabled' : false}}"/>&ndash;&gt;-->
+        <!--        &lt;!&ndash;        </t>&ndash;&gt;-->
+        <!--&lt;!&ndash;        <xpath expr="//t[@t-on-click='onDownloadButtonClicked']" position="after">&ndash;&gt;-->
+        <!--&lt;!&ndash;        <button class="btn btn-secondary fa fa-exchange add_color" t-on-click="add_color" data-tooltip="Flip axis"&ndash;&gt;-->
+        <!--&lt;!&ndash;                aria-label="Flip axis" t-attf-disabled="{{noDataDisplayed ? 'disabled' : false}}"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;        </xpath>&ndash;&gt;-->
+        <!--    </t>-->
+        <!--</templates>-->

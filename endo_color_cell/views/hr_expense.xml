@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="endo_color_cell_form_inherit" model="ir.ui.view">
+        <field name="name">hr.expense.form</field>
+        <field name="model">hr.expense</field>
+        <field name="inherit_id" ref="hr_expense.hr_expense_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <field name="color_integer" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+     <record id="endo_color_cell_tree_inherit" model="ir.ui.view">
+        <field name="name">hr.expense.tree</field>
+        <field name="model">hr.expense</field>
+        <field name="inherit_id" ref="base_endo.view_my_expenses_tree"/>
+        <field name="arch" type="xml">
+           <xpath expr="//field[@name='repeat']" position="after">
+                <field name="color_integer" invisible="0"/>
+            </xpath>
+        </field>
+    </record>
+
+     <record id="endo_color_cell_pivot_inherit" model="ir.ui.view">
+        <field name="name">hr.expense.pivot</field>
+        <field name="model">hr.expense</field>
+        <field name="inherit_id" ref="base_endo.hr_expense_view_pivot"/>
+        <field name="arch" type="xml">
+            <xpath expr='//field[@name="total_amount_company_r"]' position="after">
+                <field name="color_integer" type="measure"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
